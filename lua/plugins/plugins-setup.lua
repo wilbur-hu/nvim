@@ -24,7 +24,10 @@ return require('packer').startup(function(use)
       'nvim-tree/nvim-web-devicons', -- optional
     },
   }
-
+  use {
+    'nvim-telescope/telescope.nvim', branch = '0.1.x',
+    requires = {'nvim-lua/plenary.nvim'}
+  }
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then

@@ -31,5 +31,6 @@ opt.clipboard:append("unnamedplus")
 -- 外观
 opt.termguicolors = true
 opt.signcolumn = "yes"
+opt.gfn = 'JetBrainsMono Nerd Font:h13'
 
 vim.cmd[[colorscheme tokyonight]]
