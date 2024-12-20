@@ -13,7 +13,7 @@ local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
-  use 'folke/tokyonight.nvim'
+  use 'rebelot/kanagawa.nvim'
   use {
     'nvim-lualine/lualine.nvim',
     requires = { 'nvim-tree/nvim-web-devicons', opt = true }
@@ -24,9 +24,11 @@ return require('packer').startup(function(use)
       'nvim-tree/nvim-web-devicons', -- optional
     },
   }
-  use {
-    'nvim-telescope/telescope.nvim', branch = '0.1.x',
-    requires = {'nvim-lua/plenary.nvim'}
+  use { "ibhagwan/fzf-lua",
+    -- optional for icon support
+    requires = { "nvim-tree/nvim-web-devicons" }
+    -- or if using mini.icons/mini.nvim
+    -- requires = { "echasnovski/mini.icons" }
   }
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

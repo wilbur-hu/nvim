@@ -33,4 +33,4 @@ opt.termguicolors = true
 opt.signcolumn = "yes"
 opt.gfn = 'JetBrainsMono Nerd Font:h13'
 
-vim.cmd[[colorscheme tokyonight]]
+vim.cmd[[colorscheme kanagawa]]
